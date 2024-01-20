@@ -1,0 +1,6 @@
+@media (max-width:640px){
+    .about-text{
+        font-size: 16px;
+        line-height: 180%;
+    }
+}

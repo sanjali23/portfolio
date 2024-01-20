@@ -1,0 +1,23 @@
+.hamberger span{
+    background-color: #fff;
+    height: 1.3px;
+    border-radius: 20px;
+    transition: opacity 300ms ease-in-out, rotate 300ms ease-in-out;
+    transform-origin: right;
+}
+.span1{
+    width: 24px;
+}
+.span2{
+    width: 32px;
+}
+.span3{
+    width: 24px;
+}
+/* body.no-overflow {
+    overflow: hidden;
+}
+html.no-overflow {
+    overflow: hidden;
+} */
+

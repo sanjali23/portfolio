@@ -1,0 +1,46 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './assets/css/main.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Poppins:wght@100;200;300&family=Roboto+Slab:wght@600&family=Russo+One&family=Syne:wght@400;500;600;800&family=Teko:wght@600;700&display=swap');
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111215;
+  
+}
+.App{
+  padding: 4rem 0rem 0 0rem;
+  @media (max-width: 640px){
+  padding: 2rem 0rem 0 0rem;
+
+  }
+}
+:root {
+  --text-gradient: linear-gradient(147deg,#d3d7ff,#5a64cd);
+  --gradient-hard: linear-gradient(27deg,#5b68df,rgba(91,104,223,.65) 31.29%,rgba(109,82,194,.71) 58.21%,rgba(129,57,163,.78) 76.73%,#7f3ba6);
+  --light-blue: #F2F2F5;
+  --black:#000;
+
+}
+h4{
+  font-size: 32px;
+    line-height: 150%;
+}
+p{
+  font-size: 20px;
+    line-height: 230%;
+}
+.section-div{
+  padding: 0 4rem;
+  @media (max-width: 820px){
+  padding: 0 2rem;
+
+  }
+  @media (max-width: 640px){
+    padding: 0 1rem;
+  
+    }
+}
+
