@@ -5,6 +5,14 @@
     transition: opacity 300ms ease-in-out, rotate 300ms ease-in-out;
     transform-origin: right;
 }
+.header{
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  backdrop-filter: blur(20px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  z-index: 1000; /* Ensure the navbar stays above content */
+}
 .span1{
     width: 24px;
 }

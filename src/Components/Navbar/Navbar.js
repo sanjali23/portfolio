@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <section
-      className={`flex lg:justify-between md:justify-between lg:px-14 px-6 sticky top-0 z-20 bg-black lg:py-6 py-4 border-b z-10 ${
+      className={`flex lg:justify-between md:justify-between lg:px-14 px-6 sticky top-0 z-20 header lg:py-6 py-4 border-b z-10 ${
         isNavOpen && "h-screen"
       }`}
     >
