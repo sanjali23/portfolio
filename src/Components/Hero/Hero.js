@@ -16,7 +16,9 @@ const Hero = () => {
           </div> */}
       {console.log(window.innerWidth)}
       <h2 className="relative pl-4 pt-4 lg:pl-24 md:pt-8 md:pl-0 md:text-7xl font-russo lg:pt-heroh1 md:pt-0 align-center text-4xl lg:text-8xl flex flex-col lg:gap-20 gap-4 md:gap-12 text-white leading-10">
-        <span>Coding dreams</span>{" "}
+        <span>
+          <span className="gradient">Coding</span> dreams
+        </span>{" "}
         <span className="lg:ml-56 md:ml-20 md:whitespace-nowrap">
           into digital reality.
         </span>
