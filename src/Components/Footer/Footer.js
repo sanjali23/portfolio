@@ -34,30 +34,43 @@ const Footer = () => {
         </div>
 
         {/* <a className='button-gradient' href="mailto:sanjalisahu100@gmail.com"><a className='px-12 font-semibold uppercase leading-8 font-syne py-4 mt-4 rounded-full'>sanjalisahu100@gmail.com</a></a> */}
-        <a
+        {/* <a
           href="mailto:sanjalisahu100@gmail.com"
-          class="font-semibold uppercase mt-4 rounded-full button-gradient px-1 py-3 "
+          class="font-semibold uppercase mt-4 rounded-full button-gradient px-1 py-3"
         >
           <span className="px-8 py-3 inner-span rounded-full bg-black font-syne font-semibold">
             sanjalisahu100@gmail.com
+          </span>
+        </a> */}
+        <a
+          href="mailto:sanjalisahu100@gmail.com"
+          class="grad-bttn grad-bttn-primary"
+        >
+          {" "}
+          <span class="flex items-center gap-4">
+            <p class="font-syne whitespace-nowrap">sanjalisahu100@gmail.com</p>
           </span>
         </a>
       </div>
       <div className="footer flex md:pt-20 pt-12 lg:gap-0 md:gap-0 gap-4 lg:justify-unset lg:items-unset md:justify-unset md:items-unset justify-center items-center lg:pt-20 uppercase lg:flex-row md:flex-row flex-col justify-between lg:pb-12 md:pb-12 pb-4 font-syne text-sm font-regular text-grey">
         <a href="/">
-          <span className="">@SANJALI SAHU</span>
+          <span className="anchor-hover">@SANJALI SAHU</span>
         </a>
         <div className="flex gap-6">
-          <a target="_blank" href="https://www.linkedin.com/in/-sanjalisahu/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/-sanjalisahu/"
+            className="anchor-hover"
+          >
             <span>Linkedin</span>
           </a>
           <div className="min-h-4 bg-grey border border-grey"></div>
-          <a href="about">
+          <a href="about" className="anchor-hover">
             <span>About</span>
           </a>
           <div className="min-h-4 bg-grey border border-grey"></div>
 
-          <a href="/work">
+          <a href="/work" className="anchor-hover">
             <span>Work</span>
           </a>
         </div>

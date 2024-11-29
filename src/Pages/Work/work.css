@@ -10,7 +10,22 @@ section {
 
 		}
 		.div-wrap {
-			
+			.work-head{
+				
+				
+				p{
+				font-size: 42px;
+				margin-left: 20px;
+				@media (max-width: 500px){
+                font-size: 24px;
+				margin-left: 0px;
+				br{
+					display: none;
+				}
+				}
+				
+				}
+			}
 			.accordions {
 				margin-inline: auto;
 				width: min(1200px, 100%);

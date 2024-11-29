@@ -75,3 +75,60 @@
   .bttn-primary.bttn-primary-dark:hover span {
     color: #fff !important;
   }
+
+  /* grad-btn */
+
+ .grad-bttn-primary {
+  color: #fefce4;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding: 2px 24px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  transition: all 0.4s ease;
+  position: relative;
+  width: fit-content;
+  display: block;
+  overflow: hidden;
+  margin-top:24px;
+
+  /* Gradient Border */
+  background: linear-gradient(#000, #000) padding-box,
+              var(--gradient-hard);
+}
+
+.grad-bttn-primary span {
+  color: #fff;
+  position: relative;
+  z-index: 9;
+}
+
+.grad-bttn-primary:before {
+  position: absolute;
+  content: "";
+  background: transparent;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: 0;
+  transition: background 0.4s ease;
+}
+
+.grad-bttn-primary:hover:before {
+  background: var(--gradient-hard);
+}
+
+.grad-bttn-primary:hover span {
+  color: #fff;
+}
+
+.grad-bttn-primary:active {
+  border-color: transparent;
+  background: var(--gradient-hard);
+}
+
+.grad-bttn-primary:active span {
+  color: #fff;
+}

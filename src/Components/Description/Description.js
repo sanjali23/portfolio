@@ -27,7 +27,7 @@ const Description = () => {
   };
 
   return (
-    <section className="lg:py-0 md:py-8 py-8 lg:justify-unset md:justify-unset lg:items-unset md:items-unset justify-center items-center flex w-full gap-20">
+    <section className="lg:py-0 description-main md:py-8 py-8 lg:justify-unset md:justify-unset lg:items-unset md:items-unset justify-center items-center flex w-full gap-20">
       <div className="w-1/2 lg:flex md:hidden hidden items-center justify-center">
         <img style={imageStyle} className="w-20" src="/star.svg" />
       </div>

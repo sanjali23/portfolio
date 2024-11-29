@@ -25,7 +25,7 @@ const Hero = () => {
           src="/star.svg"
         />
       </h2>
-      <span className="opac-text text-white w-72 lg:mx-24 md:mx-0 md:mt-12 lg:mt-24 lg:mb-12 lg:ml-28 ml-4 mt-4  font-syne  font-normal">
+      <span className="opac-text text-grey w-72 lg:mx-24 md:mx-0 md:mt-12 lg:mt-24 lg:mb-12 lg:ml-28 ml-4 mt-4  font-syne  font-normal">
         Passionate about code craftsmanship, problem-solving, and shaping
         seamless digital experiences. Currently leading the way as a Fullstack
         Developer.

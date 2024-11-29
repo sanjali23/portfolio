@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import profilePic from "../../assets/profile.jpeg";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
+  const [isVisible, setIsVisible] = useState(true);
+  let scrollTimeout;
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -27,12 +28,30 @@ const Navbar = () => {
     // document.documentElement.style.overflow = 'hidden';
     // }
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      // Hide navbar while scrolling
+      setIsVisible(false);
+
+      // Show navbar after scrolling stops
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        setIsVisible(true);
+      }, 200); // Adjust delay as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+    };
+  }, []);
 
   return (
     <section
-      className={`flex lg:justify-between md:justify-between lg:px-14 px-6 sticky top-0 z-20 header lg:py-6 py-4 border-b z-10 ${
+      className={`flex lg:justify-between md:justify-between lg:px-14 px-6 sticky top-0 z-20 header lg:py-6 py-4 z-10 ${
         isNavOpen && "h-screen"
-      }`}
+      } ${isVisible ? "fade-in" : "fade-out"}`}
     >
       <button className="lg:flex md:flex sm:hidden hidden">
         <a href="/" className="bttn bttn-primary">
@@ -43,25 +62,27 @@ const Navbar = () => {
           </span>
         </a>
       </button>
-      <img
-        className="lg:hidden md:hidden flex h-16 w-16 rounded-full"
-        src={profilePic}
-      />
+      <a href="/">
+        <img
+          className="lg:hidden md:hidden flex h-16 w-16 rounded-full"
+          src={profilePic}
+        />
+      </a>
       <div className="text-sm font-medium items-center tracking-widest uppercase font-syne text-white md:flex lg:flex hidden lg:gap-12 md:gap-12 gap-4">
-        <a href="/about">
+        <a href="/about" className="anchor-hover">
           <span className="">About</span>
         </a>
-        <a href="/work">
+        <a href="/work" className="anchor-hover">
           <span className="">Work</span>
         </a>
         <button
-          className="text-sm font-medium tracking-widest uppercase font-syne text-white"
+          className="anchor-hover text-sm font-medium tracking-widest uppercase font-syne text-white"
           onClick={downloadPdf}
         >
           Download Resume
         </button>
       </div>
-      <div className="md:hidden lg:hidden flex flex-col gap-4">
+      <div className="md:hidden lg:hidden flex hamberger-group flex-col gap-4">
         <div
           onClick={() => {
             toggleNav();

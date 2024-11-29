@@ -19,18 +19,21 @@ const ThankYou = () => {
       <div class="thankyou-marquee">
         <div class="thankyou-track">
           <div class="thankyou-content flex">
-            &nbsp;Thank you for visiting my digital realm&nbsp;{" "}
-            <img className="w-3" src="/star.svg" /> &nbsp;Thank you for visiting
-            my digital realm &nbsp;
+            &nbsp;&nbsp;&nbsp;Thank you for visiting my digital
+            realm&nbsp;&nbsp;&nbsp;
+            <img className="w-3" src="/star.svg" /> &nbsp;&nbsp;&nbsp;Thank you
+            for visiting my digital realm &nbsp;&nbsp;&nbsp;
             <img className="w-3" src="/star.svg" />
-            &nbsp; Thank you for visiting my digital realm &nbsp;{" "}
-            <img className="w-3" src="/star.svg" /> &nbsp;Thank you for visiting
-            my digital realm&nbsp; <img className="w-3" src="/star.svg" />{" "}
-            &nbsp;Thank you for visiting my digital realm &nbsp;{" "}
+            &nbsp; Thank you for visiting my digital realm &nbsp;&nbsp;&nbsp;{" "}
+            <img className="w-3" src="/star.svg" /> &nbsp;&nbsp;&nbsp;Thank you
+            for visiting my digital realm&nbsp;&nbsp;&nbsp;{" "}
+            <img className="w-3" src="/star.svg" /> &nbsp;&nbsp;&nbsp;Thank you
+            for visiting my digital realm &nbsp;&nbsp;&nbsp;{" "}
             <img className="w-3" src="/star.svg" />
-            &nbsp; Thank you for visiting my digital realm&nbsp;
+            &nbsp;&nbsp;&nbsp; Thank you for visiting my digital
+            realm&nbsp;&nbsp;&nbsp;
             <img className="w-3" src="/star.svg" />
-            &nbsp; Thank you for visiting my digital realm
+            &nbsp;&nbsp;&nbsp; Thank you for visiting my digital realm
           </div>
         </div>
       </div>
